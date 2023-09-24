@@ -16,11 +16,10 @@ public class DictionaryExec_Chapter21 {
 		hashFruits.put("grape", "ぶどう");
 		hashFruits.put("muscat", "マスカット");
 		hashFruits.put("cherry", "さくらんぼ");
-		
-		if(hashFruits.get(word) != null) {
-			System.out.println(hashFruits.get(word));
-		}
-		else {
+
+		if (hashFruits.get(word) != null) {
+			System.out.println(word + "の意味は" + hashFruits.get(word));
+		} else {
 			System.out.println("辞書に" + word + "は存在しません。");
 		}
 	}
